@@ -7,33 +7,18 @@ import imgBackgroundImage from "figma:asset/cf898b98b64518fca7abf972eae71dc24257
 export function ContactPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setIsSubmitting(true);
-
     const formData = new FormData(e.currentTarget);
-    const emailTo = "acbenterprises16@gmail.com";
-
-    try {
-      const response = await fetch(`https://formsubmit.co/ajax/${emailTo}`, {
-        method: "POST",
-        body: formData,
-        headers: {
-          'Accept': 'application/json'
-        }
-      });
-
-      if (response.ok) {
-        toast.success("Message sent successfully!");
-        (e.target as HTMLFormElement).reset();
-      } else {
-        toast.error("Something went wrong. Please try again.");
-      }
-    } catch (error) {
-      toast.error("Failed to send message. Please check your connection.");
-    } finally {
-      setIsSubmitting(false);
-    }
+    const name = formData.get('name');
+    const email = formData.get('email');
+    const subject = formData.get('_subject');
+    const message = formData.get('message');
+    
+    const mailtoUrl = `mailto:acbenterprises16@gmail.com?subject=${encodeURIComponent(String(subject))}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
+    
+    window.location.href = mailtoUrl;
+    toast.success("Opening your email client...");
   };
 
   const containerVariants = {

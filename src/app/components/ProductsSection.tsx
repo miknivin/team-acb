@@ -7,7 +7,7 @@ import gradientImg from "figma:asset/ec79af5c2d67fd4194e6aa3f975e94ddc6da9c00.pn
 import mullaSilkSoftImg from "@/assets/home/85edf17bf57835c6f1816a8a5817c3e91453805b.png";
 import mullaDishwashImg from "@/assets/home/Mulla dishwash liquid-BRfupRq_.jpg";
 import sunveelLiquidImg from "@/assets/home/SUNVEEL DETERGENT LIQUID 1 kg sigel-CCDZ1PBp.jpg";
-import sunveelPowderImg from "@/assets/home/sunveel powder package 2kg mockups 99-DHuyc0FU.jpg";
+import gradientImage from "@/assets/home/Gradient.png";
 
 const products = [
   {
@@ -39,7 +39,7 @@ const products = [
     name: "Sunveel Detergent Powder",
     category: "DETERGENT POWDERS",
     description: "Powerful stain-fighting powder that dissolves quickly and removes dirt without fading your clothes, suitable for all machines.",
-    image: sunveelPowderImg,
+    image: gradientImage,
     badge: "NEW"
   }
 ];
@@ -99,15 +99,11 @@ export function ProductsSection() {
                 </div>
               )}
 
-              <div className="absolute inset-0 z-0 pointer-events-none">
-                <img src={shadowImg} alt="" className="w-full h-full object-cover" />
-              </div>
-
-              <div className="absolute inset-0 flex items-center justify-center z-10">
+              <div className="absolute inset-0 flex items-center justify-center z-10 p-6">
                 <img
                   src={product.image}
                   alt={product.name}
-                  className="w-[125%] h-full max-w-none object-contain group-hover:scale-105 transition-transform duration-500"
+                  className="h-[80%] w-auto object-contain group-hover:scale-110 transition-transform duration-500"
                 />
               </div>
             </div>

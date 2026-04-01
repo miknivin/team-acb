@@ -36,6 +36,7 @@ export function Header() {
           <Link to="/products" className={`${currentPath === '/products' ? 'text-[#15803d] font-medium border-b-2 border-[#16a34a] pb-1' : 'text-[#475569] hover:text-[#15803d] transition-colors'} text-[14px]`}>Products</Link>
           <Link to="/about" className={`${currentPath === '/about' ? 'text-[#15803d] font-medium border-b-2 border-[#16a34a] pb-1' : 'text-[#475569] hover:text-[#15803d] transition-colors'} text-[14px]`}>About</Link>
           <Link to="/contact" className={`${currentPath === '/contact' ? 'text-[#15803d] font-medium border-b-2 border-[#16a34a] pb-1' : 'text-[#475569] hover:text-[#15803d] transition-colors'} text-[14px]`}>Contact</Link>
+          <Link to="/careers" className={`${currentPath === '/careers' ? 'text-[#15803d] font-medium border-b-2 border-[#16a34a] pb-1' : 'text-[#475569] hover:text-[#15803d] transition-colors'} text-[14px]`}>Careers</Link>
         </nav>
         
         <div className="w-[120px] flex justify-end">
@@ -62,6 +63,7 @@ export function Header() {
               <Link to="/products" className={`${currentPath === '/products' ? 'text-[#15803d] font-semibold' : 'text-[#475569] hover:text-[#15803d]'} text-2xl transition-colors`}>Products</Link>
               <Link to="/about" className={`${currentPath === '/about' ? 'text-[#15803d] font-semibold' : 'text-[#475569] hover:text-[#15803d]'} text-2xl transition-colors`}>About</Link>
               <Link to="/contact" className={`${currentPath === '/contact' ? 'text-[#15803d] font-semibold' : 'text-[#475569] hover:text-[#15803d]'} text-2xl transition-colors`}>Contact</Link>
+              <Link to="/careers" className={`${currentPath === '/careers' ? 'text-[#15803d] font-semibold' : 'text-[#475569] hover:text-[#15803d]'} text-2xl transition-colors`}>Careers</Link>
             </nav>
           </motion.div>
         )}

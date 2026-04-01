@@ -11,7 +11,7 @@ export function Root() {
   }, [location.pathname]);
 
   return (
-    <div className="min-h-screen flex flex-col font-['Poppins',sans-serif] text-[#191c1e] bg-white">
+    <div className="min-h-screen flex flex-col font-['Poppins',sans-serif] text-[#191c1e] bg-white overflow-x-hidden w-full relative">
       <Header />
       <main className="flex-1">
         <Outlet />
