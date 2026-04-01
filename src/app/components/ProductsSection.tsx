@@ -36,8 +36,8 @@ const products = [
   },
   {
     id: 4,
-    name: "Sunveel Detergent Powder",
-    category: "DETERGENT POWDERS",
+    name: "Mr kitchen Dishwash Liquid",
+    category: "DISHWASHING LIQUID",
     description: "Powerful stain-fighting powder that dissolves quickly and removes dirt without fading your clothes, suitable for all machines.",
     image: gradientImage,
     badge: "NEW"
