@@ -100,7 +100,7 @@ dist
 # Gatsby files
 .cache/
 # Comment the the line below if you intended to shell out of index.html
-public
+# public
 
 # vue-cli build objects
 dist/
