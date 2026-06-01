@@ -19,7 +19,7 @@ export function AboutPage() {
   return (
     <div className="bg-white min-h-screen pt-32 pb-24 overflow-hidden">
       {/* Hero Section */}
-      <motion.section 
+      <motion.section
         className="max-w-7xl mx-auto px-6 lg:px-24 mb-24 flex flex-col md:flex-row gap-12 lg:gap-24"
         initial="hidden"
         animate="visible"
@@ -46,7 +46,7 @@ export function AboutPage() {
       </motion.section>
 
       {/* Vision & Mission Section */}
-      <motion.section 
+      <motion.section
         className="max-w-7xl mx-auto px-6 lg:px-24 mb-32"
         initial="hidden"
         whileInView="visible"
@@ -55,7 +55,7 @@ export function AboutPage() {
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Vision Card */}
-          <motion.div 
+          <motion.div
             variants={itemVariants}
             whileHover={{ y: -8 }}
             className="bg-white rounded-[32px] p-10 border border-gray-100 shadow-sm hover:shadow-xl hover:shadow-gray-100/50 transition-all"
@@ -72,7 +72,7 @@ export function AboutPage() {
           </motion.div>
 
           {/* Mission Card */}
-          <motion.div 
+          <motion.div
             variants={itemVariants}
             whileHover={{ y: -8 }}
             className="bg-white rounded-[32px] p-10 border border-gray-100 shadow-sm hover:shadow-xl hover:shadow-gray-100/50 transition-all"
@@ -84,14 +84,14 @@ export function AboutPage() {
               Our Mission
             </h3>
             <p className="text-[#64748b] text-[16px] leading-relaxed">
-              Empowering households with effective, science-backed cleaning essentials that are safe for loved ones, kind to the planet, and fairly priced.
+              Empowering household with effective, science-backed cleaning essentials that are safe for loved ones, kind to the planet, and fairly priced.
             </p>
           </motion.div>
         </div>
       </motion.section>
 
       {/* The Mulla Promise Section */}
-      <motion.section 
+      <motion.section
         className="bg-[#f8f9fa] py-24 mb-32 rounded-[48px] mx-4 lg:mx-12"
         initial="hidden"
         whileInView="visible"
@@ -148,7 +148,7 @@ export function AboutPage() {
       </motion.section>
 
       {/* Our Growth Story Section */}
-      <motion.section 
+      <motion.section
         className="max-w-5xl mx-auto px-6 lg:px-24 mb-32"
         initial="hidden"
         whileInView="visible"
@@ -166,7 +166,7 @@ export function AboutPage() {
 
         <div className="relative">
           {/* Vertical Line */}
-          <motion.div 
+          <motion.div
             initial={{ height: 0 }}
             whileInView={{ height: "100%" }}
             viewport={{ once: true }}
@@ -176,7 +176,7 @@ export function AboutPage() {
 
           {/* Timeline Items */}
           <div className="space-y-12 relative z-10">
-            
+
             {/* Item 1 */}
             <div className="flex flex-col md:flex-row items-start justify-between w-full relative">
               <div className="hidden md:block w-5/12 pr-12 text-right">
@@ -272,7 +272,7 @@ export function AboutPage() {
       </motion.section>
 
       {/* CTA Section */}
-      <motion.section 
+      <motion.section
         className="max-w-7xl mx-auto px-6 lg:px-24"
         initial={{ opacity: 0, scale: 0.95 }}
         whileInView={{ opacity: 1, scale: 1 }}
@@ -283,7 +283,7 @@ export function AboutPage() {
           {/* Decorative background circle */}
           <div className="absolute -top-40 -right-40 w-96 h-96 bg-white/10 rounded-full blur-3xl pointer-events-none"></div>
           <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-[#0f7048]/30 rounded-full blur-3xl pointer-events-none"></div>
-          
+
           <div className="relative z-10 max-w-3xl mx-auto">
             <h2 className="text-white text-3xl lg:text-[44px] font-bold font-['Poppins'] mb-6 leading-tight">
               Experience the Mulla Difference
