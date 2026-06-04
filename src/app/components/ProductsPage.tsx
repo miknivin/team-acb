@@ -70,14 +70,32 @@ function generateProducts(imagesObj: Record<string, unknown>, category: string, 
   });
 }
 
+// Sort products within a category: Mulla first, then Wento, then the rest
+function sortByBrandPriority<T extends { name: string }>(products: T[]): T[] {
+  return [...products].sort((a, b) => {
+    const aName = a.name.toLowerCase();
+    const bName = b.name.toLowerCase();
+    const aIsMulla = aName.includes("mulla");
+    const bIsMulla = bName.includes("mulla");
+    const aIsWento = aName.includes("wento");
+    const bIsWento = bName.includes("wento");
+
+    if (aIsMulla && !bIsMulla) return -1;
+    if (!aIsMulla && bIsMulla) return 1;
+    if (aIsWento && !bIsWento) return -1;
+    if (!aIsWento && bIsWento) return 1;
+    return 0;
+  });
+}
+
 const PRODUCTS = [
-  ...generateProducts(powderImages, "powders", null, "₹125.00", "Premium tough-stain powder for everyday washing."),
+  ...sortByBrandPriority(generateProducts(powderImages, "powders", null, "₹125.00", "Premium tough-stain powder for everyday washing.")),
   ...generateProducts(soapImages, "soaps", null, "₹50.00", "Tough traditional soap for extreme stains."),
-  ...generateProducts(liquidDetergentImages, "liquids", "detergent-liquid", "₹180.00", "Advanced liquid formulation for specialized cleaning."),
-  ...generateProducts(handWashImages, "liquids", "hand-wash", "₹85.00", "Refreshing and germ-fighting care for your hands."),
-  ...generateProducts(dishWashImages, "liquids", "dish-wash", "₹95.00", "Sparkling clean for all your kitchenware."),
-  ...generateProducts(toiletCleanerImages, "liquids", "toilet-cleaner", "₹120.00", "Maximum hygiene for your bathroom."),
-  ...generateProducts(floorCleanerImages, "liquids", "floor-cleaner", "₹150.00", "Long-lasting freshness for every surface."),
+  ...sortByBrandPriority(generateProducts(liquidDetergentImages, "liquids", "detergent-liquid", "₹180.00", "Advanced liquid formulation for specialized cleaning.")),
+  ...sortByBrandPriority(generateProducts(handWashImages, "liquids", "hand-wash", "₹85.00", "Refreshing and germ-fighting care for your hands.")),
+  ...sortByBrandPriority(generateProducts(dishWashImages, "liquids", "dish-wash", "₹95.00", "Sparkling clean for all your kitchenware.")),
+  ...sortByBrandPriority(generateProducts(toiletCleanerImages, "liquids", "toilet-cleaner", "₹120.00", "Maximum hygiene for your bathroom.")),
+  ...sortByBrandPriority(generateProducts(floorCleanerImages, "liquids", "floor-cleaner", "₹150.00", "Long-lasting freshness for every surface.")),
 ];
 
 const MAIN_TABS = [
@@ -202,13 +220,13 @@ export function ProductsPage() {
           animate="visible"
         >
           <AnimatePresence mode="popLayout">
-            {PRODUCTS.filter(p => {
+            {sortByBrandPriority(PRODUCTS.filter(p => {
               if (activeTab === "all") return true;
               if (activeTab === "liquids") {
                 return p.category === "liquids" && p.subCategory === activeSubTab;
               }
               return p.category === activeTab;
-            }).map((product) => (
+            })).map((product) => (
               <motion.div
                 key={product.id}
                 variants={itemVariants}
