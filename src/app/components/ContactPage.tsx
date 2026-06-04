@@ -81,7 +81,7 @@ export function ContactPage() {
                 Call Us
               </span>
               <span className="text-[#191c1e] text-[15px] lg:text-[18px] font-bold whitespace-nowrap">
-                +91 7025984447
+                +91 7907154139
               </span>
             </div>
           </motion.div>
@@ -118,8 +118,8 @@ export function ContactPage() {
               <span className="text-[#6f7a6b] text-[13px] font-bold tracking-[1px] uppercase block mb-2">
                 Visit Us
               </span>
-              <span className="text-[#191c1e] text-[15px] lg:text-[18px] font-bold">
-                Marine Drive, Kochi, Kerala 682031
+              <span className="text-[#191c1e] text-[14px] lg:text-[16px] font-bold leading-snug">
+                Door No: TP 10/51 B, Andona, Parappanpoyil (P.O), Thamarassery, Kozhikode - 673 573
               </span>
             </div>
           </motion.div>
@@ -256,7 +256,7 @@ export function ContactPage() {
                 Our Headquarters
               </h3>
               <p className="text-[#64748b] text-[14px] leading-relaxed mb-4">
-                Marine Drive, Kochi, Kerala 682031
+                Door No: TP 10/51 B, Andona, Parappanpoyil (P.O), Thamarassery, Kozhikode - 673 573
               </p>
               <button className="text-[#006c46] font-bold text-[14px] hover:text-[#1da26e] transition-colors flex items-center gap-1 group/btn">
                 Get Directions

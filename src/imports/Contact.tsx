@@ -494,7 +494,7 @@ function Container18() {
   return (
     <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Container">
       <div className="flex flex-col font-['Plus_Jakarta_Sans:Bold',sans-serif] font-bold h-[28px] justify-center leading-[0] relative shrink-0 text-[#191c1e] text-[18px] w-[151.38px]">
-        <p className="leading-[28px]">+91 484 234 5678</p>
+        <p className="leading-[28px]">+91 7907154139</p>
       </div>
     </div>
   );
@@ -564,7 +564,7 @@ function Container22() {
   return (
     <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Container">
       <div className="flex flex-col font-['Plus_Jakarta_Sans:Bold',sans-serif] font-bold h-[28px] justify-center leading-[0] relative shrink-0 text-[#191c1e] text-[18px] w-[151.91px]">
-        <p className="leading-[28px]">hello@mulla.care</p>
+        <p className="leading-[28px]">acbenterprises16@gmail.com</p>
       </div>
     </div>
   );
@@ -634,7 +634,7 @@ function Container26() {
   return (
     <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-name="Container">
       <div className="flex flex-col font-['Plus_Jakarta_Sans:Bold',sans-serif] font-bold h-[28px] justify-center leading-[0] relative shrink-0 text-[#191c1e] text-[18px] w-[166.81px]">
-        <p className="leading-[28px]">Kochi, Kerala, India</p>
+        <p className="leading-[28px]">Parappanpoyil, Thamarassery, Kozhikode</p>
       </div>
     </div>
   );
@@ -947,7 +947,7 @@ function Container39() {
   return (
     <div className="absolute content-stretch flex flex-col items-center left-[24px] top-[104px]" data-name="Container">
       <div className="flex flex-col font-['Manrope:Regular',sans-serif] font-normal h-[20px] justify-center leading-[0] relative shrink-0 text-[#3f4a3c] text-[14px] text-center w-[216.83px]">
-        <p className="leading-[20px]">Marine Drive, Kochi, Kerala 682031</p>
+        <p className="leading-[20px]">Parappanpoyil (P.O), Thamarassery, Kozhikode - 673 573</p>
       </div>
     </div>
   );

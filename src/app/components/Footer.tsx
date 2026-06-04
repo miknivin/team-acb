@@ -47,14 +47,14 @@ export function Footer() {
           <div>
             <h4 className="font-semibold mb-6 uppercase tracking-wider text-sm">Contact Information</h4>
             <ul className="space-y-4">
-              <li><span className="text-white/80 uppercase tracking-wider text-[13px] font-semibold block mb-2">ACB Group</span></li>
-              <li className="flex items-center gap-3 text-white/80">
-                <MapPin size={16} />
-                <span>Kerala, India</span>
+              <li><span className="text-white/80 uppercase tracking-wider text-[13px] font-semibold block mb-2">ACB ENTERPRISES</span></li>
+              <li className="flex items-start gap-3 text-white/80">
+                <MapPin size={16} className="mt-1 shrink-0" />
+                <span>Door No: TP 10/51 B, Andona, Parappanpoyil (P.O), Thamarassery, Kozhikode, PIN: 673 573</span>
               </li>
               <li className="flex items-center gap-3 text-white/80">
                 <Phone size={16} />
-                <span>+91 7025984447</span>
+                <span>+91 7907154139</span>
               </li>
               <li className="flex items-center gap-3 text-white/80">
                 <Mail size={16} />
